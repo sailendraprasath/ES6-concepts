@@ -48,3 +48,44 @@ const getAllDataFromFIN = PersonData.filter((singleperson, index) => {
 });
 
 console.log(getAllDataFromFIN);
+
+//some
+
+let checkSomeArrayMethodWithExample = PersonData.some((singleperson, index) => {
+  return singleperson.age > 22;
+});
+
+console.log(checkSomeArrayMethodWithExample);
+
+// every
+
+let checkEveryArrayMethodWithExample = PersonData.every(
+  (singleperson, index) => {
+    return singleperson.age > 22;
+  }
+);
+
+console.log(checkEveryArrayMethodWithExample);
+
+// includes
+
+let fruits = ["apple", "banana", "Orange"];
+
+console.log(fruits.includes("apple"));
+console.log(fruits.includes("sailesh"));
+
+// indexof
+
+let cars = ["BMW", "Ferari", "Aadi"];
+
+console.log(cars.indexOf("Ferari"));
+
+// findindex
+
+let getIndexOfPersonWhoIsFromFinland = PersonData.findIndex(
+  (singleperson, index) => {
+    return singleperson.country === "FINLAND";
+  }
+);
+
+console.log(getIndexOfPersonWhoIsFromFinland);
